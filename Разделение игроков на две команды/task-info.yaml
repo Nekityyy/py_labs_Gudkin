@@ -1,0 +1,31 @@
+type: output
+files:
+- name: main.py
+  visible: true
+  text: |
+    list_players = ["Маша", "Петя", "Саша", "Оля", "Кирилл", "Коля"]
+
+    # индекс середины
+    middle_index = len(list_players) // 2
+
+    first_team = list_players[:middle_index]
+    second_team = list_players[middle_index:]
+
+    print(first_team)
+    print(second_team)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/output.txt
+  visible: false
+  text: |
+    ['Маша', 'Петя', 'Саша']
+    ['Оля', 'Кирилл', 'Коля']
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 03 Apr 2025 20:23:07 UTC"
+record: -1
+solution_hidden: true
